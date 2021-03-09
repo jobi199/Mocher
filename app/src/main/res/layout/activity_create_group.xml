@@ -1,9 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ActivityCreateGroup">
+    style="@style/container"
+    tools:context=".ActivityCreateGroup"
+    android:background="@color/white">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        style="@style/linear_layout_page"
+        android:id="@+id/page_1">
+
+        <include layout="@layout/include_filter"/>
+
+    </LinearLayout>
+
+    <include layout="@layout/include_swipe_page"/>
+
+    <include layout="@layout/include_result_page"/>
+
+    <include layout="@layout/include_load_screen"/>
+
+    <include layout="@layout/include_tutorial"/>
+
+    <include layout="@layout/include_bottom_navigation_view"/>
+
+</FrameLayout>

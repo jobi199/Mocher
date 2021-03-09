@@ -1,10 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="purple_200">#FFBB86FC</color>
-    <color name="purple_500">#FF6200EE</color>
-    <color name="purple_700">#FF3700B3</color>
-    <color name="teal_200">#FF03DAC5</color>
-    <color name="teal_700">#FF018786</color>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <color name="purple_200">#BB86FC</color>
+    <color name="purple_500">#6200EE</color>
+    <color name="purple_700">#3700B3</color>
+    <color name="teal_200">#03DAC5</color>
+    <color name="teal_700">#018786</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="red">#FF0006</color>
+    <color name="green">#32BA7C</color>
+    <color name="grey">#BDBDBD</color>
+    <color name="yellow">#FFF200</color>
+    <color name="orange">#DC7633</color>
+    <color name="gold">#FFE27A</color>
+    <color name="silver">#C0C0C0</color>
+    <color name="bronze">#DAA520</color>
+    <color name="blue">#00B0F4</color>
+    <color name="dark_blue">#0000FF</color>
+    <color name="dark_yellow">#FDE500</color>
+
+
+    <color name="result_list_background">#E6E6E6</color>
+    <color name="foreground">#BDBDBD</color>
+    <color name="text_color">#80FFFFFF</color>
+    <color name="skin">#F7CAA5</color>
+
+    <color name="black_transparent">#99000000</color>
+    <color name="white_transparent">#80FFFFFF</color>
+    <color name="green_transparent">#8000FF00</color>
+    <color name="red_transparent">#80EE1C25</color>
+    <color name="yellow_transparent">#80FFF200</color>
+    <color name="grey_transparent">#80FFFFFF</color>
+
+    <color name="gradient_start">#243949</color>
+    <color name="gradient_end">#517fa4</color>
+
+    <color name="bottom_menu_not_focused">#80000000</color>
+    <color name="background">#FFFFFF</color>
+
+    //Filter
+    <color name="seek_bar_color">#F2F2F2</color>
+    <color name="filter_text_color">#000000</color>
+    <color name="filter_border_color">#BDBDBD</color>
+    <color name="filter_background_color">#FFFFFF</color>
+    <color name="filter_green">#00BE13</color>
+    <color name="filter_green_transparent">#80228B22</color>
+
 </resources>

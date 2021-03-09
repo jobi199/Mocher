@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_horizontal|center_vertical"
+    android:layout_width="330dp"
+    android:layout_height="536dp"
+    android:background="@drawable/background_round_corners"
+    android:backgroundTint="@color/white_transparent"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginTop="13dp"
+    android:layout_marginBottom="68dp">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/button_like"/>
+
+</LinearLayout>

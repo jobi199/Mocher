@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/linear_layout_top_bar"
+        android:layout_marginBottom="0dp">
+
+        <TextView
+            style="@style/text_view_top_bar_code"
+            android:id="@+id/recipe_count"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="56dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:weightSum="8">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginHorizontal="10dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="5dp"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginVertical="10dp">
+
+                        <TextView
+                            style="@style/text_view_filter"
+                            android:id="@+id/maturity_0"
+                            android:tooltipText="0"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="5dp"
+                            android:text="0"/>
+
+                        <TextView
+                            style="@style/text_view_filter"
+                            android:id="@+id/maturity_6"
+                            android:tooltipText="0"
+                            android:layout_marginHorizontal="5dp"
+                            android:text="6+"/>
+
+                        <TextView
+                            style="@style/text_view_filter"
+                            android:id="@+id/maturity_12"
+                            android:tooltipText="0"
+                            android:layout_marginHorizontal="5dp"
+                            android:text="12+"/>
+
+                        <TextView
+                            style="@style/text_view_filter"
+                            android:id="@+id/maturity_16"
+                            android:tooltipText="0"
+                            android:layout_marginHorizontal="5dp"
+                            android:text="16+"/>
+
+                        <TextView
+                            style="@style/text_view_filter"
+                            android:id="@+id/maturity_18"
+                            android:tooltipText="0"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="10dp"
+                            android:text="18+"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="5dp"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:orientation="vertical"
+                        android:layout_margin="10dp"
+                        android:gravity="center">
+
+                        <com.crystal.crystalrangeseekbar.widgets.CrystalRangeSeekbar
+                            android:id="@+id/release_date_seek_bar"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginHorizontal="5dp"
+                            android:layout_marginTop="5dp"
+                            app:max_value="2021"
+                            app:min_value="1990"
+                            app:bar_highlight_color="@color/seek_bar_color"
+                            app:bar_color="@color/seek_bar_color"
+                            app:left_thumb_color_pressed="@color/blue"
+                            app:right_thumb_color_pressed="@color/blue"
+                            app:left_thumb_color="@color/seek_bar_color"
+                            app:right_thumb_color="@color/seek_bar_color"/>
+
+                        <TextView
+                            android:id="@+id/release_date_text_view"
+                            android:layout_width="130dp"
+                            android:layout_height="25dp"
+                            android:textColor="@color/black"
+                            android:textSize="15dp"
+                            android:layout_gravity="center"
+                            android:gravity="center"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="5dp"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="65dp"
+                        android:orientation="vertical"
+                        android:layout_margin="10dp"
+                        android:gravity="center">
+
+                        <com.crystal.crystalrangeseekbar.widgets.CrystalRangeSeekbar
+                            android:id="@+id/rating_seek_bar"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="5dp"
+                            app:max_value="10"
+                            app:min_value="0"
+                            app:bar_highlight_color="@color/seek_bar_color"
+                            app:bar_color="@color/seek_bar_color"
+                            app:left_thumb_color_pressed="@color/blue"
+                            app:right_thumb_color_pressed="@color/blue"
+                            app:left_thumb_color="@color/seek_bar_color"
+                            app:right_thumb_color="@color/seek_bar_color"/>
+
+                        <TextView
+                            android:id="@+id/rating_text_view"
+                            android:layout_width="130dp"
+                            android:layout_height="25dp"
+                            android:textColor="@color/black"
+                            android:textSize="15dp"
+                            android:layout_gravity="center"
+                            android:gravity="center"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="5dp"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal"
+                        android:layout_marginVertical="10dp"
+                        android:layout_marginHorizontal="5dp"
+                        android:gravity="center"
+                        android:weightSum="6">
+
+                        <ImageView
+                            style="@style/image_view_country"
+                            android:id="@+id/germany"
+                            android:tooltipText="Deutschland"
+                            android:src="@drawable/icon_germany"/>
+
+                        <ImageView
+                            style="@style/image_view_country"
+                            android:id="@+id/usa"
+                            android:tooltipText="Vereinigte Staaten"
+                            android:src="@drawable/icon_usa"/>
+
+                        <ImageView
+                            style="@style/image_view_country"
+                            android:id="@+id/china"
+                            android:tooltipText="China"
+                            android:src="@drawable/icon_china"/>
+
+                        <ImageView
+                            style="@style/image_view_country"
+                            android:id="@+id/italy"
+                            android:tooltipText="Italien"
+                            android:src="@drawable/icon_italy"/>
+
+                        <ImageView
+                            style="@style/image_view_country"
+                            android:id="@+id/france"
+                            android:tooltipText="Frankreich"
+                            android:src="@drawable/icon_france"/>
+
+                        <ImageView
+                            style="@style/image_view_country"
+                            android:id="@+id/india"
+                            android:tooltipText="Indien"
+                            android:src="@drawable/icon_india"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="5dp"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        style="@style/linear_layout_power_spinner"
+                        android:background="@drawable/background_filter_round_corners"
+                        android:backgroundTint="@color/white"
+                        android:layout_margin="10dp">
+
+                        <com.skydoves.powerspinner.PowerSpinnerView
+                            style="@style/power_spinner"
+                            android:layout_weight="1"
+                            android:id="@+id/genres_power_spinner"
+                            android:hint="Genres"
+                            android:paddingVertical="5dp"
+                            app:spinner_arrow_tint="@color/filter_text_color"
+                            app:spinner_arrow_gravity="end"
+                            app:spinner_divider_color="@color/filter_border_color"
+                            app:spinner_divider_show="true"
+                            app:spinner_divider_size="0.4dp"
+                            app:spinner_item_array="@array/genres"
+                            app:spinner_popup_animation="dropdown"
+                            app:spinner_popup_background="@color/white"
+                            app:spinner_popup_elevation="14dp"/>
+
+                        <ImageView
+                            style="@style/image_view_power_spinner_reset"
+                            android:layout_weight="9"
+                            android:src="@drawable/icon_delete"
+                            android:paddingVertical="5dp"
+                            android:onClick="resetSpinnerAllergies"
+                            app:tint="@color/red"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:weightSum="2">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="15dp"
+                        app:cardElevation="5dp"
+                        app:cardUseCompatPadding="true">
+
+                        <LinearLayout
+                            style="@style/linear_layout_power_spinner"
+                            android:id="@+id/category_linear_layout"
+                            android:background="@drawable/background_filter_round_corners"
+                            android:backgroundTint="@color/white"
+                            android:layout_margin="10dp">
+
+                            <com.skydoves.powerspinner.PowerSpinnerView
+                                style="@style/power_spinner"
+                                android:id="@+id/category_power_spinner"
+                                android:hint="@string/category"
+                                app:spinner_arrow_tint="@color/filter_text_color"
+                                app:spinner_arrow_gravity="end"
+                                app:spinner_divider_color="@color/filter_border_color"
+                                app:spinner_divider_show="true"
+                                app:spinner_divider_size="0.4dp"
+                                app:spinner_item_array="@array/meal_category"
+                                app:spinner_popup_animation="dropdown"
+                                app:spinner_popup_elevation="14dp"
+                                app:spinner_popup_background="@color/white"/>
+
+                            <ImageView
+                                style="@style/image_view_power_spinner_reset"
+                                android:src="@drawable/icon_delete"
+                                android:paddingVertical="5dp"
+                                android:onClick="resetSpinnerCategory"
+                                app:tint="@color/red"/>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="15dp"
+                        app:cardElevation="5dp"
+                        app:cardUseCompatPadding="true">
+
+                        <LinearLayout
+                            style="@style/linear_layout_power_spinner"
+                            android:id="@+id/eating_linear_layout"
+                            android:background="@drawable/background_filter_round_corners"
+                            android:backgroundTint="@color/white"
+                            android:layout_margin="10dp">
+
+                            <com.skydoves.powerspinner.PowerSpinnerView
+                                style="@style/power_spinner"
+                                android:id="@+id/eating_type_power_spinner"
+                                android:hint="@string/nutrition"
+                                app:spinner_arrow_tint="@color/filter_text_color"
+                                app:spinner_arrow_gravity="end"
+                                app:spinner_divider_color="@color/filter_border_color"
+                                app:spinner_divider_show="true"
+                                app:spinner_divider_size="0.4dp"
+                                app:spinner_item_array="@array/eating_type"
+                                app:spinner_popup_animation="dropdown"
+                                app:spinner_popup_elevation="14dp"
+                                app:spinner_popup_background="@color/white"/>
+
+                            <ImageView
+                                style="@style/image_view_power_spinner_reset"
+                                android:src="@drawable/icon_delete"
+                                android:paddingVertical="5dp"
+                                android:onClick="resetSpinnerEatingType"
+                                app:tint="@color/red"/>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="7">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        style="@style/text_view_filter_page_buttons"
+                        android:text="Zurücksetzen"
+                        android:onClick="resetFilter"/>
+
+                    <TextView
+                        style="@style/text_view_filter_page_buttons"
+                        android:id="@+id/text_view_create_group_button"
+                        android:text="Swipen"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
