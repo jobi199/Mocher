@@ -8,26 +8,6 @@
     <string name="join_group">Gruppe beitreten</string>
     <string name="create_group">Gruppe erstellen</string>
 
-    //Filter
-    <string name="breakfast">Frühstück</string>
-    <string name="lunch">Mittagessen</string>
-    <string name="dinner">Abendessen</string>
-    <string name="dessert">Dessert</string>
-    <string name="snack">Snack</string>
-    <string name="drink">Getränk</string>
-    <string name="easy">Einfach</string>
-    <string name="medium">Mittel</string>
-    <string name="hard">Schwer</string>
-    <string name="type_of_meal">Art der Mahlzeit</string>
-    <string name="time_and_calories">Zubereitungszeit und Kalorien</string>
-    <string name="difficulty">Schwierigkeit</string>
-    <string name="country">Länderküche</string>
-    <string name="additional">Sonstiges</string>
-    <string name="allergies">Allergien</string>
-    <string name="preparation">Zubereitung</string>
-    <string name="category">Kategorie</string>
-    <string name="nutrition">Ernährung</string>
-
     //Recipe Card
     <string name="calories">Brennwert</string>
     <string name="fat">Fett</string>
@@ -56,70 +36,116 @@
     //Loadscreen
     <string name="loadScreen_standard">Lädt. Bitte warten...</string>
 
-    <string-array name="meal_allergies">
-        <item>Eier</item>
-        <item>Fisch</item>
-        <item>Gluten</item>
-        <item>Laktose</item>
-        <item>Nüsse</item>
-        <item>Sellerie</item>
-        <item>Senf</item>
-        <item>Sesam</item>
-        <item>Soja</item>
-    </string-array>
-
-    <string-array name="preparation_type">
-        <item>Backen</item>
-        <item>Braten</item>
-        <item>Grillen</item>
-        <item>Kochen</item>
-        <item>Roh</item>
-    </string-array>
-
-    <string-array name="eating_type">
-        <item>Abnehmen</item>
-        <item>Fettarm</item>
-        <item>Lowcarb</item>
-        <item>Vegan</item>
-        <item>Vegetarisch</item>
-    </string-array>
-
-    <string-array name="meal_category">
-        <item>Auflauf</item>
-        <item>Brot</item>
-        <item>Burger</item>
-        <item>Kuchen</item>
-        <item>Pasta</item>
-        <item>Pfannkuchen</item>
-        <item>Pizza</item>
-        <item>Plätzchen</item>
-        <item>Quiche</item>
-        <item>Reis</item>
-        <item>Salat</item>
-        <item>Smoothie</item>
-        <item>Suppe</item>
-    </string-array>
-
     <string-array name="genres">
         <item>Abenteuer</item>
         <item>Action</item>
-        <item>Anime-Spielfilme</item>
-        <item>Blockbuster</item>
-        <item>Crime/Krimi</item>
-        <item>Deutsche Filme</item>
-        <item>Dokumentationen</item>
-        <item>Dramen</item>
-        <item>Horrorfilme</item>
-        <item>Independent-Filme</item>
-        <item>Internationale Filme</item>
-        <item>Kinder- und Familienfilme</item>
-        <item>Komödien</item>
-        <item>Musik und Musicals</item>
-        <item>Preisgekrönte Filme</item>
-        <item>Romantische Filme</item>
-        <item>Sci-Fi und Fantasy</item>
-        <item>Stand-up-Comedy</item>
+        <item>Animation</item>
+        <item>Dokumentarfilm</item>
+        <item>Drama</item>
+        <item>Familie</item>
+        <item>Fantasy</item>
+        <item>Historie</item>
+        <item>Horror</item>
+        <item>Komödie</item>
+        <item>Kriegsfilm</item>
+        <item>Krimi</item>
+        <item>Liebesfilm</item>
+        <item>Musik</item>
+        <item>Mystery</item>
+        <item>Science Fiction</item>
         <item>Thriller</item>
+        <item>TV-Film</item>
+        <item>Western</item>
+    </string-array>
+
+    <string-array name="actors">
+        <item>Adam Sandler</item>
+        <item>Al Pacino</item>
+        <item>Alan Rickman</item>
+        <item>Anthony Hopkins</item>
+        <item>Brad Pitt</item>
+        <item>Bruce Willis</item>
+        <item>Christian Bale</item>
+        <item>Christoph Waltz</item>
+        <item>Clint Eastwood</item>
+        <item>Daniel Craig</item>
+        <item>Denzel Washington</item>
+        <item>Dwayne Johnson</item>
+        <item>Gary Oldman</item>
+        <item>George Clooney</item>
+        <item>Harrison Ford</item>
+        <item>Jackie Chan</item>
+        <item>Jake Gyllenhaal</item>
+        <item>Jason Statham</item>
+        <item>Johnny Depp</item>
+        <item>Keanu Reeves</item>
+        <item>Kevin Spacey</item>
+        <item>Leonardo DiCaprio</item>
+        <item>Liam Neeson</item>
+        <item>Matt Damon</item>
+        <item>Mel Gibson</item>
+        <item>Morgan Freeman</item>
+        <item>Patrick Stewart</item>
+        <item>Rober De Niro</item>
+        <item>Robert Downey Jr.</item>
+        <item>Robin Williams</item>
+        <item>Russel Crowe</item>
+        <item>Samuel L. Jackson</item>
+        <item>Sean Connery</item>
+        <item>Tom Cruise</item>
+        <item>Tom Hanks</item>
+        <item>Will Smith</item>
+    </string-array>
+
+    <string-array name="actresses">
+        <item>Amy Adams</item>
+        <item>Anne Hathaway</item>
+        <item>Brie Larson</item>
+        <item>Cameron Diaz</item>
+        <item>Cate Blanchett</item>
+        <item>Elizabeth Olsen</item>
+        <item>Elliot Page</item>
+        <item>Emma Stone</item>
+        <item>Emma Watson</item>
+        <item>Gwyneth Paltrow</item>
+        <item>Helena Bonham Carter</item>
+        <item>Jennifer Lawrence</item>
+        <item>Jodie Foster</item>
+        <item>Judi Dench</item>
+        <item>Julia Roberts</item>
+        <item>Julianne Moore</item>
+        <item>Kate Winslet</item>
+        <item>Kristen Stewart</item>
+        <item>Michelle Rodríguez</item>
+        <item>Naomi Watts</item>
+        <item>Natalie Portman</item>
+        <item>Sandra Bullock</item>
+        <item>Scarlett Johansson</item>
+        <item>Zoe Saldana</item>
+    </string-array>
+
+    <string-array name="directors">
+        <item>Anthony Russo</item>
+        <item>Bryan Singer</item>
+        <item>Chris Columbus</item>
+        <item>Christopher Nolan</item>
+        <item>David Yates</item>
+        <item>George Lucas</item>
+        <item>Gore Verbinski</item>
+        <item>J. J. Abrams</item>
+        <item>James Cameron</item>
+        <item>Joe Russo</item>
+        <item>Jon Favreau</item>
+        <item>Michael Bay</item>
+        <item>Peter Jackson</item>
+        <item>Pierre Coffin</item>
+        <item>Quentin Tarantino</item>
+        <item>Ridley Scott</item>
+        <item>Robert Zemeckis</item>
+        <item>Roland Emmerich</item>
+        <item>Ron Howard</item>
+        <item>Steven Spielberg</item>
+        <item>Tim Burton</item>
     </string-array>
 
 </resources>

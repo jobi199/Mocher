@@ -14,7 +14,7 @@
 
         <TextView
             style="@style/text_view_top_bar_code"
-            android:id="@+id/recipe_count"/>
+            android:id="@+id/movie_count"/>
 
     </LinearLayout>
 
@@ -62,28 +62,28 @@
                         <TextView
                             style="@style/text_view_filter"
                             android:id="@+id/maturity_6"
-                            android:tooltipText="0"
+                            android:tooltipText="6"
                             android:layout_marginHorizontal="5dp"
                             android:text="6+"/>
 
                         <TextView
                             style="@style/text_view_filter"
                             android:id="@+id/maturity_12"
-                            android:tooltipText="0"
+                            android:tooltipText="12"
                             android:layout_marginHorizontal="5dp"
                             android:text="12+"/>
 
                         <TextView
                             style="@style/text_view_filter"
                             android:id="@+id/maturity_16"
-                            android:tooltipText="0"
+                            android:tooltipText="16"
                             android:layout_marginHorizontal="5dp"
                             android:text="16+"/>
 
                         <TextView
                             style="@style/text_view_filter"
                             android:id="@+id/maturity_18"
-                            android:tooltipText="0"
+                            android:tooltipText="18"
                             android:layout_marginLeft="5dp"
                             android:layout_marginRight="10dp"
                             android:text="18+"/>
@@ -113,7 +113,7 @@
                             android:layout_marginHorizontal="5dp"
                             android:layout_marginTop="5dp"
                             app:max_value="2021"
-                            app:min_value="1990"
+                            app:min_value="1980"
                             app:bar_highlight_color="@color/seek_bar_color"
                             app:bar_color="@color/seek_bar_color"
                             app:left_thumb_color_pressed="@color/blue"
@@ -149,11 +149,11 @@
                         android:gravity="center">
 
                         <com.crystal.crystalrangeseekbar.widgets.CrystalRangeSeekbar
-                            android:id="@+id/rating_seek_bar"
+                            android:id="@+id/duration_seek_bar"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginHorizontal="5dp"
-                            app:max_value="10"
+                            app:max_value="200"
                             app:min_value="0"
                             app:bar_highlight_color="@color/seek_bar_color"
                             app:bar_color="@color/seek_bar_color"
@@ -163,7 +163,7 @@
                             app:right_thumb_color="@color/seek_bar_color"/>
 
                         <TextView
-                            android:id="@+id/rating_text_view"
+                            android:id="@+id/duration_text_view"
                             android:layout_width="130dp"
                             android:layout_height="25dp"
                             android:textColor="@color/black"
@@ -189,43 +189,49 @@
                         android:layout_marginVertical="10dp"
                         android:layout_marginHorizontal="5dp"
                         android:gravity="center"
-                        android:weightSum="6">
+                        android:weightSum="7">
 
                         <ImageView
                             style="@style/image_view_country"
-                            android:id="@+id/germany"
-                            android:tooltipText="Deutschland"
-                            android:src="@drawable/icon_germany"/>
-
-                        <ImageView
-                            style="@style/image_view_country"
-                            android:id="@+id/usa"
-                            android:tooltipText="Vereinigte Staaten"
+                            android:id="@+id/united_states"
+                            android:tooltipText="Englisch"
                             android:src="@drawable/icon_usa"/>
 
                         <ImageView
                             style="@style/image_view_country"
-                            android:id="@+id/china"
-                            android:tooltipText="China"
-                            android:src="@drawable/icon_china"/>
+                            android:id="@+id/korea"
+                            android:tooltipText="Koreanisch"
+                            android:src="@drawable/icon_korea"/>
+
+                        <ImageView
+                            style="@style/image_view_country"
+                            android:id="@+id/japan"
+                            android:tooltipText="Japanisch"
+                            android:src="@drawable/icon_japan"/>
+
+                        <ImageView
+                            style="@style/image_view_country"
+                            android:id="@+id/spain"
+                            android:tooltipText="Spanisch"
+                            android:src="@drawable/icon_spain"/>
+
+                        <ImageView
+                            style="@style/image_view_country"
+                            android:id="@+id/germany"
+                            android:tooltipText="Deutsch"
+                            android:src="@drawable/icon_germany"/>
 
                         <ImageView
                             style="@style/image_view_country"
                             android:id="@+id/italy"
-                            android:tooltipText="Italien"
+                            android:tooltipText="Italienisch"
                             android:src="@drawable/icon_italy"/>
 
                         <ImageView
                             style="@style/image_view_country"
                             android:id="@+id/france"
-                            android:tooltipText="Frankreich"
+                            android:tooltipText="Französisch"
                             android:src="@drawable/icon_france"/>
-
-                        <ImageView
-                            style="@style/image_view_country"
-                            android:id="@+id/india"
-                            android:tooltipText="Indien"
-                            android:src="@drawable/icon_india"/>
 
                     </LinearLayout>
 
@@ -234,7 +240,60 @@
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="5dp"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="65dp"
+                        android:orientation="vertical"
+                        android:layout_margin="10dp"
+                        android:gravity="center">
+
+                        <com.crystal.crystalrangeseekbar.widgets.CrystalRangeSeekbar
+                            android:id="@+id/rating_seek_bar"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="5dp"
+                            app:max_value="100"
+                            app:min_value="0"
+                            app:bar_highlight_color="@color/seek_bar_color"
+                            app:bar_color="@color/seek_bar_color"
+                            app:left_thumb_color_pressed="@color/blue"
+                            app:right_thumb_color_pressed="@color/blue"
+                            app:left_thumb_color="@color/seek_bar_color"
+                            app:right_thumb_color="@color/seek_bar_color"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:orientation="horizontal"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/rating_text_view"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:textColor="@color/black"
+                                android:textSize="15dp"
+                                android:gravity="center"/>
+
+                            <ImageView
+                                android:layout_width="25dp"
+                                android:layout_height="match_parent"
+                                android:paddingVertical="5dp"
+                                android:src="@drawable/icon_star"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     app:cardCornerRadius="15dp"
                     app:cardElevation="5dp"
                     app:cardUseCompatPadding="true">
@@ -247,9 +306,9 @@
 
                         <com.skydoves.powerspinner.PowerSpinnerView
                             style="@style/power_spinner"
+                            android:id="@+id/power_spinner_genre"
                             android:layout_weight="1"
-                            android:id="@+id/genres_power_spinner"
-                            android:hint="Genres"
+                            android:hint="Genre"
                             android:paddingVertical="5dp"
                             app:spinner_arrow_tint="@color/filter_text_color"
                             app:spinner_arrow_gravity="end"
@@ -266,101 +325,135 @@
                             android:layout_weight="9"
                             android:src="@drawable/icon_delete"
                             android:paddingVertical="5dp"
-                            android:onClick="resetSpinnerAllergies"
+                            android:onClick="resetGenreSpinner"
                             app:tint="@color/red"/>
 
                     </LinearLayout>
 
                 </androidx.cardview.widget.CardView>
 
-                <LinearLayout
+                <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_marginBottom="10dp"
-                    android:weightSum="2">
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="5dp"
+                    app:cardUseCompatPadding="true">
 
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        app:cardCornerRadius="15dp"
-                        app:cardElevation="5dp"
-                        app:cardUseCompatPadding="true">
+                    <LinearLayout
+                        style="@style/linear_layout_power_spinner"
+                        android:background="@drawable/background_filter_round_corners"
+                        android:backgroundTint="@color/white"
+                        android:layout_margin="10dp">
 
-                        <LinearLayout
-                            style="@style/linear_layout_power_spinner"
-                            android:id="@+id/category_linear_layout"
-                            android:background="@drawable/background_filter_round_corners"
-                            android:backgroundTint="@color/white"
-                            android:layout_margin="10dp">
+                        <com.skydoves.powerspinner.PowerSpinnerView
+                            style="@style/power_spinner"
+                            android:id="@+id/power_spinner_actor"
+                            android:layout_weight="1"
+                            android:hint="Schauspieler"
+                            android:paddingVertical="5dp"
+                            app:spinner_arrow_tint="@color/filter_text_color"
+                            app:spinner_arrow_gravity="end"
+                            app:spinner_divider_color="@color/filter_border_color"
+                            app:spinner_divider_show="true"
+                            app:spinner_divider_size="0.4dp"
+                            app:spinner_item_array="@array/actors"
+                            app:spinner_popup_animation="dropdown"
+                            app:spinner_popup_background="@color/white"
+                            app:spinner_popup_elevation="14dp"/>
 
-                            <com.skydoves.powerspinner.PowerSpinnerView
-                                style="@style/power_spinner"
-                                android:id="@+id/category_power_spinner"
-                                android:hint="@string/category"
-                                app:spinner_arrow_tint="@color/filter_text_color"
-                                app:spinner_arrow_gravity="end"
-                                app:spinner_divider_color="@color/filter_border_color"
-                                app:spinner_divider_show="true"
-                                app:spinner_divider_size="0.4dp"
-                                app:spinner_item_array="@array/meal_category"
-                                app:spinner_popup_animation="dropdown"
-                                app:spinner_popup_elevation="14dp"
-                                app:spinner_popup_background="@color/white"/>
+                        <ImageView
+                            style="@style/image_view_power_spinner_reset"
+                            android:layout_weight="9"
+                            android:src="@drawable/icon_delete"
+                            android:paddingVertical="5dp"
+                            android:onClick="resetActorSpinner"
+                            app:tint="@color/red"/>
 
-                            <ImageView
-                                style="@style/image_view_power_spinner_reset"
-                                android:src="@drawable/icon_delete"
-                                android:paddingVertical="5dp"
-                                android:onClick="resetSpinnerCategory"
-                                app:tint="@color/red"/>
+                    </LinearLayout>
 
-                        </LinearLayout>
+                </androidx.cardview.widget.CardView>
 
-                    </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="5dp"
+                    app:cardUseCompatPadding="true">
 
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        app:cardCornerRadius="15dp"
-                        app:cardElevation="5dp"
-                        app:cardUseCompatPadding="true">
+                    <LinearLayout
+                        style="@style/linear_layout_power_spinner"
+                        android:background="@drawable/background_filter_round_corners"
+                        android:backgroundTint="@color/white"
+                        android:layout_margin="10dp">
 
-                        <LinearLayout
-                            style="@style/linear_layout_power_spinner"
-                            android:id="@+id/eating_linear_layout"
-                            android:background="@drawable/background_filter_round_corners"
-                            android:backgroundTint="@color/white"
-                            android:layout_margin="10dp">
+                        <com.skydoves.powerspinner.PowerSpinnerView
+                            style="@style/power_spinner"
+                            android:id="@+id/power_spinner_actress"
+                            android:layout_weight="1"
+                            android:hint="Schauspielerin"
+                            android:paddingVertical="5dp"
+                            app:spinner_arrow_tint="@color/filter_text_color"
+                            app:spinner_arrow_gravity="end"
+                            app:spinner_divider_color="@color/filter_border_color"
+                            app:spinner_divider_show="true"
+                            app:spinner_divider_size="0.4dp"
+                            app:spinner_item_array="@array/actresses"
+                            app:spinner_popup_animation="dropdown"
+                            app:spinner_popup_background="@color/white"
+                            app:spinner_popup_elevation="14dp"/>
 
-                            <com.skydoves.powerspinner.PowerSpinnerView
-                                style="@style/power_spinner"
-                                android:id="@+id/eating_type_power_spinner"
-                                android:hint="@string/nutrition"
-                                app:spinner_arrow_tint="@color/filter_text_color"
-                                app:spinner_arrow_gravity="end"
-                                app:spinner_divider_color="@color/filter_border_color"
-                                app:spinner_divider_show="true"
-                                app:spinner_divider_size="0.4dp"
-                                app:spinner_item_array="@array/eating_type"
-                                app:spinner_popup_animation="dropdown"
-                                app:spinner_popup_elevation="14dp"
-                                app:spinner_popup_background="@color/white"/>
+                        <ImageView
+                            style="@style/image_view_power_spinner_reset"
+                            android:layout_weight="9"
+                            android:src="@drawable/icon_delete"
+                            android:paddingVertical="5dp"
+                            android:onClick="resetActressSpinner"
+                            app:tint="@color/red"/>
 
-                            <ImageView
-                                style="@style/image_view_power_spinner_reset"
-                                android:src="@drawable/icon_delete"
-                                android:paddingVertical="5dp"
-                                android:onClick="resetSpinnerEatingType"
-                                app:tint="@color/red"/>
+                    </LinearLayout>
 
-                        </LinearLayout>
+                </androidx.cardview.widget.CardView>
 
-                    </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="5dp"
+                    app:cardUseCompatPadding="true">
 
-                </LinearLayout>
+                    <LinearLayout
+                        style="@style/linear_layout_power_spinner"
+                        android:background="@drawable/background_filter_round_corners"
+                        android:backgroundTint="@color/white"
+                        android:layout_margin="10dp">
+
+                        <com.skydoves.powerspinner.PowerSpinnerView
+                            style="@style/power_spinner"
+                            android:id="@+id/power_spinner_director"
+                            android:layout_weight="1"
+                            android:hint="Regisseur"
+                            android:paddingVertical="5dp"
+                            app:spinner_arrow_tint="@color/filter_text_color"
+                            app:spinner_arrow_gravity="end"
+                            app:spinner_divider_color="@color/filter_border_color"
+                            app:spinner_divider_show="true"
+                            app:spinner_divider_size="0.4dp"
+                            app:spinner_item_array="@array/directors"
+                            app:spinner_popup_animation="dropdown"
+                            app:spinner_popup_background="@color/white"
+                            app:spinner_popup_elevation="14dp"/>
+
+                        <ImageView
+                            style="@style/image_view_power_spinner_reset"
+                            android:layout_weight="9"
+                            android:src="@drawable/icon_delete"
+                            android:paddingVertical="5dp"
+                            android:onClick="resetDirectorSpinner"
+                            app:tint="@color/red"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
 
             </LinearLayout>
 
